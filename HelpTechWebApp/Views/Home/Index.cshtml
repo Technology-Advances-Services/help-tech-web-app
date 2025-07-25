@@ -8,162 +8,287 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link href="~/home/css/index.css" rel="stylesheet" />
-    <title>HelpTechWebApp - Conectamos Hogares con Expertos</title>
+    <title>HelpTechWebApp</title>
 
 </head>
 <body>
 
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">HelpTechWebApp</a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#como-funciona">Cómo Funciona</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero" id="inicio">
-        <div class="particles"></div>
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Conectamos tu <span class="highlight">Hogar</span> con <span class="highlight">Expertos</span> Tech</h1>
-                    <p>La plataforma que revoluciona la manera de solucionar problemas técnicos en casa. Usuarios domésticos encuentran técnicos especializados, técnicos encuentran nuevas oportunidades laborales.</p>
-                    <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary">🔧 Encontrar Técnico</a>
-                        <a href="#" class="btn btn-secondary">👨‍🔧 Soy Técnico</a>
+            <a class="navbar-brand" href="#" data-aos="fade-right">
+                <i class="fas fa-tools me-2"></i>HelpTech
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-works">Cómo Funciona</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-custom" href="#cta">Únete Ahora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero-section gradient-bg">
+        <div class="tech-animation"></div>
+        <div class="tech-animation"></div>
+        <div class="tech-animation"></div>
+        <div class="tech-animation"></div>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title" data-aos="fade-up">
+                        Conectamos tu hogar con expertos técnicos
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                        Soluciona todos tus problemas domésticos sin salir de casa. Encuentra técnicos calificados al instante y recibe ayuda profesional cuando la necesites.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="400">
+                        <a href="#servicios" class="btn btn-custom btn-lg pulse-animation">
+                            <i class="fas fa-rocket me-2"></i>Comenzar Ahora
+                        </a>
+                        <a href="#como-funciona" class="btn btn-outline-custom btn-lg">
+                            <i class="fas fa-play me-2"></i>Ver Cómo Funciona
+                        </a>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="floating-card card-1">
-                        <div class="icon">🔧</div>
-                        <h3>Reparación Rápida</h3>
-                        <p>Técnicos certificados en tu área</p>
-                    </div>
-                    <div class="floating-card card-2">
-                        <div class="icon">💼</div>
-                        <h3>Oportunidades</h3>
-                        <p>Trabajos desde casa</p>
-                    </div>
-                    <div class="floating-card card-3">
-                        <div class="icon">⭐</div>
-                        <h3>Calidad Garantizada</h3>
-                        <p>Servicios con garantía</p>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="600">
+                    <div class="floating-card text-center">
+                        <i class="fas fa-home" style="font-size: 4rem; color: white; margin-bottom: 1rem;"></i>
+                        <h3 style="color: white; margin-bottom: 1rem;">¿Necesitas ayuda técnica?</h3>
+                        <p style="color: rgba(255,255,255,0.8);">Electricidad, plomería, reparaciones, instalaciones y más. Todo desde la comodidad de tu hogar.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="features" id="servicios">
+    <section id="services" class="py-5">
         <div class="container">
-            <div class="section-title">
-                <h2>¿Por qué elegir HelpTechWebApp?</h2>
-                <p>Una plataforma diseñada para simplificar la vida de usuarios y crear oportunidades para técnicos especializados</p>
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="section-title">Nuestros Servicios</h2>
+                    <p class="section-subtitle">Conectamos usuarios con técnicos especializados para solucionar cualquier problema en tu hogar</p>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🏠</div>
-                    <h3>Para Usuarios Domésticos</h3>
-                    <p>Encuentra técnicos especializados cerca de ti para resolver cualquier problema técnico en tu hogar. Desde instalaciones hasta reparaciones complejas, todo al alcance de un clic.</p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon icon-1">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Para Usuarios</h4>
+                        <p>Encuentra técnicos calificados cerca de ti. Recibe asistencia remota o presencial para todos tus problemas domésticos. Evaluaciones y garantía de calidad.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Búsqueda rápida de técnicos</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Asistencia remota 24/7</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Precios transparentes</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Garantía de satisfacción</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🛠️</div>
-                    <h3>Para Técnicos Profesionales</h3>
-                    <p>Amplía tus oportunidades laborales trabajando desde casa. Conecta con clientes que necesitan tus servicios sin depender de tiendas físicas o desplazamientos largos.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon icon-2">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Para Técnicos</h4>
+                        <p>Amplía tu negocio sin necesidad de un local físico. Conecta con clientes que necesitan tus servicios y gestiona tu trabajo de manera eficiente.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Trabajo flexible</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Gestión de clientes</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Pagos seguros</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Construcción de reputación</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Tecnología Avanzada</h3>
-                    <p>Nuestra plataforma utiliza algoritmos inteligentes para conectar perfectamente usuarios con los técnicos más adecuados según la especialidad y ubicación.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Seguridad Garantizada</h3>
-                    <p>Todos nuestros técnicos son verificados y certificados. Sistema de pagos seguro y garantía en todos los servicios prestados.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💬</div>
-                    <h3>Comunicación Directa</h3>
-                    <p>Chat en tiempo real entre usuarios y técnicos. Seguimiento completo del proceso desde la solicitud hasta la finalización del servicio.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Respuesta Inmediata</h3>
-                    <p>Encuentra técnicos disponibles en tiempo real. Servicios de emergencia disponibles 24/7 para problemas urgentes en tu hogar.</p>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon icon-3">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4>Servicios Técnicos</h4>
+                        <p>Amplia gama de servicios disponibles para cubrir todas las necesidades de tu hogar, desde reparaciones básicas hasta instalaciones complejas.</p>
+                        <ul class="list-unstyled text-start mt-3">
+                            <li><i class="fas fa-check text-success me-2"></i>Electricidad y iluminación</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Plomería y fontanería</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Electrodomésticos</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Sistemas de climatización</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="how-it-works" id="como-funciona">
+    <section id="how-works" class="py-5 bg-light">
         <div class="container">
-            <div class="section-title">
-                <h2>Cómo funciona HelpTechWebApp</h2>
-                <p>Proceso simple y eficiente para conectar necesidades con soluciones</p>
+            <div class="row">
+                <div class="col-12" data-aos="fade-up">
+                    <h2 class="section-title">Cómo Funciona HelpTech</h2>
+                    <p class="section-subtitle">Un proceso simple y eficiente para conectar usuarios con técnicos especializados</p>
+                </div>
             </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Describe tu Problema</h3>
-                    <p>Cuenta qué necesitas reparar o instalar en tu hogar. Nuestro sistema analizará tu solicitud para encontrar el técnico perfecto.</p>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="feature-icon icon-1 mx-auto">
+                            <span style="font-weight: bold; font-size: 1.5rem;">1</span>
+                        </div>
+                        <h5>Describe tu problema</h5>
+                        <p>Explica qué necesitas arreglar o instalar en tu hogar a través de nuestra plataforma intuitiva.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Conectamos con Técnicos</h3>
-                    <p>Te mostramos técnicos especializados en tu área con valoraciones reales de otros usuarios y disponibilidad inmediata.</p>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="feature-icon icon-2 mx-auto">
+                            <span style="font-weight: bold; font-size: 1.5rem;">2</span>
+                        </div>
+                        <h5>Encuentra tu técnico</h5>
+                        <p>Nuestro sistema te conecta con técnicos calificados disponibles en tu área o para asistencia remota.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Programa y Paga</h3>
-                    <p>Elige fecha y hora conveniente. Pago seguro a través de la plataforma con múltiples opciones de pago disponibles.</p>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="feature-icon icon-3 mx-auto">
+                            <span style="font-weight: bold; font-size: 1.5rem;">3</span>
+                        </div>
+                        <h5>Recibe asistencia</h5>
+                        <p>El técnico te ayuda a solucionar tu problema de forma remota o programa una visita si es necesario.</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Servicio Completado</h3>
-                    <p>El técnico resuelve tu problema con garantía incluida. Califica el servicio y ayuda a otros usuarios con tu experiencia.</p>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center">
+                        <div class="feature-icon icon-1 mx-auto">
+                            <span style="font-weight: bold; font-size: 1.5rem;">4</span>
+                        </div>
+                        <h5>Problema resuelto</h5>
+                        <p>Evalúa el servicio recibido y disfruta de tu hogar funcionando perfectamente.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer id="contacto">
+    <section class="py-5 gradient-bg">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>HelpTechWebApp</h3>
-                    <p>Conectamos hogares con expertos técnicos para crear soluciones eficientes y oportunidades laborales desde casa.</p>
+            <div class="row text-center text-white">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-counter">1,000+</div>
+                    <h5>Técnicos Registrados</h5>
                 </div>
-                <div class="footer-section">
-                    <h3>Para Usuarios</h3>
-                    <p><a href="#">Encontrar Técnico</a></p>
-                    <p><a href="#">Servicios Disponibles</a></p>
-                    <p><a href="#">Preguntas Frecuentes</a></p>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-counter">5,000+</div>
+                    <h5>Usuarios Satisfechos</h5>
                 </div>
-                <div class="footer-section">
-                    <h3>Para Técnicos</h3>
-                    <p><a href="#">Únete como Técnico</a></p>
-                    <p><a href="#">Verificación</a></p>
-                    <p><a href="#">Centro de Ayuda</a></p>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-counter">15,000+</div>
+                    <h5>Problemas Resueltos</h5>
                 </div>
-                <div class="footer-section">
-                    <h3>Contacto</h3>
-                    <p>📧 info@helptechwebapp.com</p>
-                    <p>📱 +1 (555) 123-4567</p>
-                    <p>🌐 www.helptechwebapp.com</p>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stats-counter">24/7</div>
+                    <h5>Disponibilidad</h5>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 HelpTechWebApp. Todos los derechos reservados.</p>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section py-5 text-white position-relative">
+        <div class="container position-relative">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <h2 class="mb-4" style="font-size: 2.5rem; font-weight: 700;">¿Listo para comenzar?</h2>
+                    <p class="mb-4" style="font-size: 1.2rem; opacity: 0.9;">Únete a miles de usuarios que ya disfrutan de un hogar sin problemas técnicos</p>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="#" class="btn btn-custom btn-lg">
+                            <i class="fas fa-user me-2"></i>Registrarse como Usuario
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-wrench me-2"></i>Registrarse como Técnico
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h3 class="mb-3">
+                        <i class="fas fa-tools me-2" style="color: var(--primary-color);"></i>HelpTech
+                    </h3>
+                    <p>Conectamos hogares con expertos técnicos para solucionar todos tus problemas domésticos de manera rápida y eficiente.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="footer-link"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="footer-link"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Electricidad</a></li>
+                        <li><a href="#" class="footer-link">Plomería</a></li>
+                        <li><a href="#" class="footer-link">Electrodomésticos</a></li>
+                        <li><a href="#" class="footer-link">Climatización</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-3">Empresa</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Acerca de</a></li>
+                        <li><a href="#" class="footer-link">Carreras</a></li>
+                        <li><a href="#" class="footer-link">Prensa</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@helptech.com</p>
+                    <p><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-map-marker-alt me-2"></i> Ciudad, País</p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: #444;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2025 HelpTech. Todos los derechos reservados.</p>
+                </div>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script type="text/javascript">
+
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -178,73 +303,50 @@
             });
         });
 
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(96, 45, 152, 0.98)';
-                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
             } else {
-                header.style.background = 'rgba(96, 45, 152, 0.95)';
-                header.style.boxShadow = 'none';
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
             }
         });
 
-        function createParticle() {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stats-counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.textContent.replace(/\D/g, ''));
+                const suffix = counter.textContent.replace(/[0-9,]/g, '');
+                let current = 0;
+                const increment = target / 100;
 
-            const size = Math.random() * 5 + 2;
-            particle.style.width = size + 'px';
-            particle.style.height = size + 'px';
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
-            particle.style.animationDelay = Math.random() * 5 + 's';
-
-            document.querySelector('.particles').appendChild(particle);
-
-            setTimeout(() => {
-                particle.remove();
-            }, 20000);
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = target.toLocaleString() + suffix;
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = Math.ceil(current).toLocaleString() + suffix;
+                    }
+                }, 20);
+            });
         }
 
-        setInterval(createParticle, 500);
-
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
+        const statsSection = document.querySelector('.py-5.gradient-bg');
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                    animateCounters();
+                    observer.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
-
-        document.querySelectorAll('.feature-card, .step').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(50px)';
-            el.style.transition = 'all 0.6s ease';
-            observer.observe(el);
         });
 
-        document.querySelectorAll('.btn').forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-3px) scale(1.02)';
-            });
+        observer.observe(statsSection);
 
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
+        document.querySelectorAll('.feature-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.2}s`;
         });
-
-        let gradientAngle = 135;
-        setInterval(() => {
-            gradientAngle += 0.5;
-            document.body.style.background = `linear-gradient(${gradientAngle}deg, #C25252, #944FA4, #602D98)`;
-        }, 100);
 
     </script>
 
